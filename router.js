@@ -1,8 +1,8 @@
 
+const Authentication = require( './controllers/authentication' );
+
 module.exports = function( app ) {
   'use strict';
 
-  app.get( '/', function( req, res, next) {
-
-  });
+  app.post( '/signup', Authentication.signup );
 };
